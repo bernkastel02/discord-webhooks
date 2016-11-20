@@ -1,0 +1,22 @@
+{
+  "name": "discord-webhooks",
+  "version": "0.0.1",
+  "description": "A Client made for Discord's webhooks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none-tbh"
+  },
+  "keywords": [
+    "discord",
+    "webhooks"
+  ],
+  "author": "FlanScarlet",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
