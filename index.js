@@ -1,11 +1,11 @@
 const Webhook = require("./lib/WebhookClient");
 
-function WebhookClient(token, id) {
+function Discord(token, id) {
     return new Webhook(token, id);
     /* Discord Webhooks: Developed by FlanScarlet */
 }
 
-WebhookClient.Webhook = Webhook;
+Discord.Webhook = Webhook;
 
 
 module.exports = WebhookClient;
