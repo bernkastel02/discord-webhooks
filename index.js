@@ -5,7 +5,7 @@ function WebhookClient(token, id) {
     /* Discord Webhooks: Developed by FlanScarlet */
 }
 
-WebhookClient.WebhookC = Webhook;
+WebhookClient.Webhook = Webhook;
 
 
 module.exports = WebhookClient;
