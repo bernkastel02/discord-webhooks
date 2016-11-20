@@ -1,7 +1,7 @@
 const Webhook = require("./lib/WebhookClient");
 
-function WebhookClient(token) {
-    return new Webhook(token);
+function WebhookClient(token, id) {
+    return new Webhook(token, id);
     /* Discord Webhooks: Developed by FlanScarlet */
 }
 

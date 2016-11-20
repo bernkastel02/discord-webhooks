@@ -1,5 +1,5 @@
 const Webhook = require("discordwebhooks");
-const wh = new Webhook("webhook token");
+const wh = new Webhook("webhook token", "webhook id");
 
 
-wh.sendWebhook("webhook id", "content", {})
+wh.sendWebhook("content", {})
