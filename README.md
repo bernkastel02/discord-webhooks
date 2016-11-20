@@ -1,7 +1,7 @@
 # discord-webhooks
 A Client made for Discord's webhooks.
 ## Links
-[NPM](https://npmjs.com/package/discord-webhooks), [Github](https://github.com/FlanScarlet/discord-webhooks)
+[NPM](https://npmjs.com/package/discordwebhooks), [Github](https://github.com/FlanScarlet/discord-webhooks)
 
 # Documentation
 <hr>
@@ -24,7 +24,7 @@ tts: <[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
 <br>embeds: <[Array]()>: Array of [embed objects](https://discordapp.com/developers/docs/resources/channel#embed-object).
 ##Example
 ```js
-const Webhook = require("discord-webhooks");
+const Webhook = require("discordwebhooks");
 const wh = new Webhook("webhook token");
 
 

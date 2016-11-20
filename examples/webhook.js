@@ -1,4 +1,4 @@
-const Webhook = require("discord-webhooks");
+const Webhook = require("discordwebhooks");
 const wh = new Webhook("webhook token");
 
 

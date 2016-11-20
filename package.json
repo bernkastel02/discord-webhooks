@@ -1,5 +1,5 @@
 {
-  "name": "discord-webhooks",
+  "name": "discordwebhooks",
   "version": "0.0.1",
   "description": "A Client made for Discord's webhooks.",
   "main": "index.js",

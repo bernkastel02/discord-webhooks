@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.7.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.7.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/webhooks-discord',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/discord-webhooks/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle discord-webhooks@0.0.1~prepublish: discord-webhooks@0.0.1
+11 silly lifecycle discord-webhooks@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/discord-webhooks/0.0.1/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/webhooks-discord' ]
+13 verbose tarball /home/ubuntu/.npm/discord-webhooks/0.0.1/package.tgz
+14 verbose folder /home/ubuntu/workspace/webhooks-discord
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/discord-webhooks/0.0.1/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd discord-webhooks@0.0.1
+18 verbose afterAdd /home/ubuntu/.npm/discord-webhooks/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/discord-webhooks/0.0.1/package/package.json written
+21 silly publish { name: 'discord-webhooks',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'A Client made for Discord\'s webhooks.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'npm install' },
+21 silly publish   repository: { type: 'git', url: 'none-tbh' },
+21 silly publish   keywords: [ 'discord', 'webhooks' ],
+21 silly publish   author: { name: 'FlanScarlet' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies: { request: '^2.79.0' },
+21 silly publish   readme: '# discord-webhooks\nA Client made for Discord\'s webhooks.\n## Links\n[NPM](https://npmjs.com/package/discord-webhooks), [Github](https://github.com/FlanScarlet/discord-webhooks)\n\n# Documentation\n<hr>\n## .sendWebhook(webhookID, content, options)\n### webhookID:\nThe ID of the webhook\n\nExample: "249743770017333249"\n    \n### content:\nThe content being sent.\n\nExample: "Hello! I\'m a Webhook!"\n\n### options:\nThe options.\n\n####List of options: \ntts: <[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>: If the webhook is sent as a voice or not.\n<br>embeds: <[Array]()>: Array of [embed objects](https://discordapp.com/developers/docs/resources/channel#embed-object).\n##Example\n```js\nconst Webhook = require("discord-webhooks");\nconst wh = new Webhook("webhook token");\n\n\nwh.sendWebhook("webhook id", "content", {})\n```',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '5ee0e4e3284fc3ad4d00f18ba4922fdf022c09c5',
+21 silly publish   _id: 'discord-webhooks@0.0.1',
+21 silly publish   _shasum: '723bc3743087b574a8ba7336f2fadd8f9fd9b0ec',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name discord-webhooks
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'discord-webhooks',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'discord-webhooks',
+26 silly mapToRegistry   name: 'discord-webhooks',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/discord-webhooks
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/ubuntu/.npm/discord-webhooks/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/discord-webhooks
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:32:28 AM
+33 verbose request using bearer token for auth
+34 verbose request id 69e84e2f7ce1f62c
+35 http request PUT https://registry.npmjs.org/discord-webhooks
+36 http 403 https://registry.npmjs.org/discord-webhooks
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '110',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 20 Nov 2016 09:32:29 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ord1723-ORD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1479634349.004926,VS0,VE386',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/ubuntu/.npm/registry.npmjs.org/discord-webhooks on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "discord-webhooks". Are you logged in as the correct user? : discord-webhooks
+40 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid discord-webhooks
+43 verbose cwd /home/ubuntu/workspace/webhooks-discord
+44 error Linux 4.2.0-c9
+45 error argv "/home/ubuntu/.nvm/versions/node/v6.7.0/bin/node" "/home/ubuntu/.nvm/versions/node/v6.7.0/bin/npm" "publish"
+46 error node v6.7.0
+47 error npm  v3.10.3
+48 error code E403
+49 error you do not have permission to publish "discord-webhooks". Are you logged in as the correct user? : discord-webhooks
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
